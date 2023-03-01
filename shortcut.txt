@@ -1,0 +1,3 @@
+alt+z = wrap text
+alt + shift + down arrow = copy line
+ctrl + p = file search
