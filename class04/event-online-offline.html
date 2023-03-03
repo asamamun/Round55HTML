@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* document level style/embedded style */
+        @import url("anotherstyle.css");
+    </style>
+    <!-- link style/external style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<hr ononline="m(true)" onoffline="m(false)" onload="">
+    <h1 style=""  title="">attribute minimization</h1>
+    <p contenteditable>আবার দামেও বিশ্ববাজারে এখন সবচেয়ে সস্তা ইউক্রেন-রাশিয়ার গম। দেশ দুটি থেকে প্রতি কেজি গম আমদানিতে বন্দর পর্যন্ত খরচ পড়ছে ৩৭ টাকা। রাশিয়া থেকে বেসরকারি খাতে আমদানিতে সব ব্যাংক ঋণপত্র খুলছে না। ইউক্রেনে এ সমস্যা নেই। এখন কোনো কারণে চুক্তি নবায়ন না হলে কম দামে আটা তৈরির গম যেমন মিলবে না, তেমনি সরবরাহেও ধাক্কা আসবে। এতে আটার পাশাপাশি গমের তৈরি সব ধরনের খাবারের দাম বাড়ার শঙ্কা রয়েছে।
+
+    </p>
+    <hr>
+    <form action="">
+        <input type="text" onfocus="foc()" onblur="blu()" disabled>
+    </form>
+    <h1>testing online and offline</h1>
+    <h1 draggable="true">testing online and offline</h1>
+    <script>
+        function m(b){
+            if(b){ alert("You are online!")}
+            if(!b){ alert("You are offline!")}
+        }
+        function foc(){console.log("focus activated")}
+        function blu(){console.log("blur activated")}
+    </script>
+</body>
+</html>
