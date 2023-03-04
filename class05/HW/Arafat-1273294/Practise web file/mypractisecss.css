@@ -1,0 +1,33 @@
+
+.head1 {color: darkblue; font-size: 40px;
+font-family: 'Courier New', Courier, monospace;}
+
+
+.div-1{ color: coral;}
+
+.btn {background-color: black; color: white;
+padding: auto; font-family: 'Courier New', Courier, monospace;}
+.link1 {color: green;}
+#id-id1 {color: blue;}
+
+.hover-hand:hover {color: green;
+cursor: pointer;}
+
+
+.hover-hand1 {color: red;}
+
+.hover-hand1:hover {
+    cursor: pointer;
+}
+
+
+.table, td, th {border: 1px solid black;}
+
+dl {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
