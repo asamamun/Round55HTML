@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: wheat;
+}
+
+.form-wrap {
+  width: 400px;
+  margin: 100px auto;
+  background-color: white;
+  padding: 15px;
+}
+
+.form-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: right;
+}
+
+.page-link {
+  font-weight: bold;
+  color: black;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+form {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+form legend {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.input-group {
+  text-align: left;
+  color: #47514f;
+  margin-bottom: 15px;
+}
+.input-group label {
+  display: block;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.input-group input {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  font-size: 1rem;
+  border: 1px solid #47514f;
+  border-radius: 5px;
+}
+
+.inputs {
+  margin-top: 30px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  background-color: #feb843;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  font-weight: medium;
+  text-transform: capitalize;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

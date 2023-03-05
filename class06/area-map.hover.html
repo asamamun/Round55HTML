@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        svg, defs, clipPath {
+height: 0; 
+position: absolute; 
+top: 0; left: 0;  
+}
+
+#figura {
+position: relative; 
+width: 360px; height: 480px; 
+border: 1px solid black; 
+border-radius: 20px; 
+margin: 10px auto; 
+overflow: hidden; 
+background-color: white;
+}
+#figura::before {
+display: block; 
+content: ""; 
+position: absolute; 
+top: 0; left: 0; 
+background-image: url('https://lh3.googleusercontent.com/-nGr9cn8UyPc/Vhvb4OAhzlI/AAAAAAAAEsc/OWUL6oQjPys/s800-Ic42/AugustoWarnke.jpg'); 
+background-size: cover;  
+opacity: .4;
+width: 360px; height: 480px; 
+}
+
+#capaRecorte {
+display: block; 
+position: absolute; 
+top: 0; left: 0; 
+width: 360px; height: 480px; 
+}
+
+#imagen {
+width: 360px; height: 480px; 
+position: absolute;
+top: 0; left: 0; 
+cursor: crosshair; 
+}
+
+#figura area {
+display: block; 
+}
+
+#figura area:nth-of-type(1):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(120px 368px,177px 372px,172px 444px,117px 449px);
+clip-path: url(#A1); 
+}
+
+#figura area:nth-of-type(2):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(199px 370px,284px 377px,269px 449px,199px 448px,193px 432px);
+clip-path: url(#B1); 
+}
+
+#figura area:nth-of-type(3):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(101px 277px,157px 278px,174px 283px,173px 290px,172px 359px,100px 363px,99px 353px);
+clip-path: url(#A2); 
+}
+
+#figura area:nth-of-type(4):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(194px 283px,202px 276px,219px 283px,255px 283px,262px 287px,268px 293px,277px 341px,274px 366px,193px 365px,188px 338px,194px 283px);
+clip-path: url(#B2); 
+}
+
+#figura area:nth-of-type(5):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(97px 153px,135px 158px,163px 155px,167px 160px,167px 231px,170px 241px,170px 258px,152px 267px,135px 264px,100px 264px,95px 161px,94px 158px);
+clip-path: url(#A3); 
+}
+
+#figura area:nth-of-type(6):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(185px 154px,226px 158px,267px 156px,274px 162px,277px 177px,274px 257px,194px 264px,186px 257px,183px 161px);
+clip-path: url(#B3); 
+}
+
+#figura area:nth-of-type(7):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(93px 42px,158px 31px,169px 44px,171px 97px,168px 132px,163px 142px,102px 143px,86px 132px,91px 54px);
+clip-path: url(#A4); 
+}
+
+#figura area:nth-of-type(8):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(180px 38px,281px 39px,280px 110px,276px 146px,271px 144px,184px 140px,180px 134px,182px 83px,181px 76px);
+clip-path: url(#B4); 
+}
+
+    </style>
+</head>
+<body>
+    <h1>Destaca clips/áreas poligonales al pasar el puntero. Puro CSS. (Chr, FF, Op18).</h1>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"  >
+    <defs>
+    <clipPath id=A1>
+    <polygon points="120 368,177 372,172 444,117 449"  ></polygon>
+    </clipPath>
+    <clipPath id=B1>
+    <polygon points="199 370,284 377,269 449,199 448,193 432"></polygon>
+    </clipPath>
+    <clipPath id=A2>
+    <polygon points="101 277,157 278,174 283,173 290,172 359,100 363,99 353"></polygon>
+    </clipPath>
+    <clipPath id=B2>
+    <polygon points="194 283,202 276,219 283,255 283,262 287,268 293,277 341,274 366,193 365,188 338,194 283"></polygon>
+    </clipPath>
+    <clipPath id=A3>
+    <polygon points="97 153,135 158,163 155,167 160,167 231,170 241,170 258,152 267,135 264,100 264,95 161,94 158"></polygon>
+    </clipPath>
+    <clipPath id=B3>
+    <polygon points="185 154,226 158,267 156,274 162,277 177,274 257,194 264,186 257,183 161"></polygon>
+    </clipPath>
+    <clipPath id=A4>
+    <polygon points="93 42,158 31,169 44,171 97,168 132,163 142,102 143,86 132,91 54"></polygon>
+    </clipPath>
+    <clipPath id=B4>
+    <polygon points="180 38,281 39,280 110,276 146,271 144,184 140,180 134,182 83,181 76"></polygon>
+    </clipPath>
+    </defs>
+    </svg>
+    
+    <figure id=figura title="Augusto Warnke.">
+    <map name=recortes id=recortes>
+    <area shape=poly title=A1 
+    coords="120,368,177,372,172,444,117,449" target="_blank" 
+    href="https://photos.app.goo.gl/BYwuZ9awSTf1V1kT2" >
+    <area shape=poly title=B1 
+    coords="199,370,284,377,269,449,199,448,193,432" 
+    href="https://photos.app.goo.gl/BYwuZ9awSTf1V1kT2" >
+    <area shape=poly title=A2 
+    coords="101,277,157,278,174,283,173,290,172,359,100,363,99,353" 
+    href="https://photos.app.goo.gl/BYwuZ9awSTf1V1kT2" >
+    <area shape=poly title=B2 
+    coords="194,283,202,276,219,283,255,283,262,287,268,293,277,341,274,366,193,365,188,338,194,283" 
+    href="https://photos.app.goo.gl/BYwuZ9awSTf1V1kT2" >
+    <area shape=poly title=A3 
+    coords="97,153,135,158,163,155,167,160,167,231,170,241,170,258,152,267,135,264,100,264,95,161,94,158" 
+    href="https://photos.app.goo.gl/BYwuZ9awSTf1V1kT2" >
+    <area shape=poly title=B3 
+    coords="185,154,226,158,267,156,274,162,277,177,274,257,194,264,186,257,183,161" 
+    href="https://photos.app.goo.gl/BYwuZ9awSTf1V1kT2" >
+    <area shape=poly title=A4 
+    coords="93,42,158,31,169,44,171,97,168,132,163,142,102,143,86,132,91,54" 
+    href="https://photos.app.goo.gl/BYwuZ9awSTf1V1kT2" >
+    <area shape=poly title=B4 
+    coords="180,38,281,39,280,110,276,146,271,144,184,140,180,134,182,83,181,76" 
+    href="https://photos.app.goo.gl/BYwuZ9awSTf1V1kT2" >
+    
+    <img id=capaRecorte src="https://lh3.googleusercontent.com/-nGr9cn8UyPc/Vhvb4OAhzlI/AAAAAAAAEsc/OWUL6oQjPys/s800-Ic42/AugustoWarnke.jpg" >
+    </map>
+    
+    <img src="https://lh3.googleusercontent.com/-HqFCpcmlv1U/VjZqE6e7u0I/AAAAAAAAGao/hIQohrsu0xI/s800-Ic42/transparente.gif" 
+    id=imagen alt="" usemap=#recortes >
+    
+    </figure>
+    
+</body>
+</html>

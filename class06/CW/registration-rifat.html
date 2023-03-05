@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <style>
+       
+        sup{
+            color: red;
+        }
+        label{
+            font-size: 16px;
+            font-weight: bold;
+            display: inline-flex;
+        }
+        input{
+             width: 300px;
+             height: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        #btn{
+            margin-top: 20px;
+             height: 30px;
+            background:  red;
+            font-weight: bold;
+            font-size: 16px;
+        } 
+        .form{
+           display: flex;
+           justify-content: center;
+        }
+        fieldset{
+            display: inline;
+        }
+        h5{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- <form action="#">
+        <fieldset>
+            <legend>Please give your information</legend>
+           <pre>
+             <label for="fname">Your first name</label>
+            <input id="fname" type="text" placeholder="first name">
+            <label for="lname">Your last name</label>
+            <input id="lname" type="text" placeholder="last name">
+            <label for="old">Date of Birth</label>
+            <input id="old" type="date">
+            <label for="gender">your gender</label>
+            <input type="radio" name="1" id="gender">
+            <input type="radio" name="1" id="gender">
+            <input type="radio" name="1" id="gender">
+            <label for="img">your image</label>
+            <input type="file" name="img" id="img">
+            <label for="pass">Create your password</label>
+            <input type="password" name="password" id="pass">
+            <label for="emil">Give your Gmail</label>
+            <input type="email" name="Gmail" id="email">
+            <label for="">You are agree</label>
+            <input type="checkbox" name="You are agree" id="">
+           </pre>
+        </fieldset>
+    </form> -->
+
+   <div class="form">
+     <form action="#">
+        <fieldset>
+            <h5>Login</h5>
+            <h1>Registration</h1>
+ <pre>
+  <label for="uname">Username<sup>*</sup> </label>
+ <input type="text" name="Username" id="uname">
+ <label for="email">Email<sup>*</sup> </label>
+ <input type="email" name="email" id="email">
+ <label for="pass">password<sup>*</sup> </label>
+ <input type="password" name="password" id="pass">
+ <label for="cpass">Confrom password<sup>*</sup> </label>
+ <input type="password" name="password" id="cpass">
+ <input id="btn" type="button" value="Sing in">
+ </pre>
+        </fieldset>
+
+    </form>
+   </div>
+</body>
+</html>
